@@ -1,5 +1,11 @@
 # ProgrammingAssignment3
 
+Question 1
+
+<img width="639" height="475" alt="image" src="https://github.com/user-attachments/assets/59f42aff-8efe-4971-8dd7-7ff926e8ff52" />
+
+
+
 
 Question 2
 
