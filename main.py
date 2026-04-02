@@ -19,3 +19,7 @@ def main():
 
     n = len(A)
     m = len(B)
+
+    i = 0
+    j = 0
+    answer = []
