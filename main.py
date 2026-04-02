@@ -47,5 +47,5 @@ def main():
     print(dp[0][0])
     print("".join(answer))
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
