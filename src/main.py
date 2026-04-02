@@ -1,7 +1,7 @@
 import sys
 
-def main():
-    data = sys.stdin.read().strip().split()
+def parse_input(text):
+    data = text.strip().split()
     idx = 0
 
     K = int(data[idx])
@@ -17,6 +17,9 @@ def main():
     A = data[idx]
     B = data[idx + 1]
 
+    return value, A, B
+
+def hvlcs(value, A, B):
     n = len(A)
     m = len(B)
 
@@ -44,8 +47,16 @@ def main():
             j += 1
 
     """printingg result"""
-    print(dp[0][0])
-    print("".join(answer))
+
+    return dp[0][0], "".join(answer)
+
+
+def main():
+    text = sys.stdin.read()
+    value, A, B = parse_input(text)
+    best, subseq = hvlcs(value, A, B)
+    print(best)
+    print(subseq)
 
 if __name__ == "__main__":
     main()
