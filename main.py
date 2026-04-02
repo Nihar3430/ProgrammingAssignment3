@@ -31,3 +31,18 @@ def main():
     i = 0
     j = 0
     answer = []
+
+
+    while i < n and j < m:
+        if A[i] == B[j] and dp[i][j] == value[A[i]] + dp[i + 1][j + 1]:
+            answer.append(A[i])
+            i += 1
+            j += 1
+        elif dp[i][j] == dp[i + 1][j]:
+            i += 1
+        else:
+            j += 1
+
+    """printingg result"""
+    print(dp[0][0])
+    print("".join(answer))
