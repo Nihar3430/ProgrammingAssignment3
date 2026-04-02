@@ -1,25 +1,26 @@
 # ProgrammingAssignment3
 
+Nihar Devireddy: 78990160
+Mukul Vinod: 65024528
+
 File Structure:
 
-src\
+    src\
         main.py
         graph.py
     tests\
         all test .in and .out files
-    results\
-        plot and timining data.
+    README.MD
 
+To run the code against the tests, make sure you are in the parent directory and run the command "python3 src/main.py < tests/example7.in"
 
+Change the test example7.in number depending on what test you want to run. To generate a graph from graph.py, simply click the run button on the file.
 
-
+Input/Output format is the same as defined in the example given in the assignment.
 
 Question 1
 
 <img width="639" height="475" alt="image" src="https://github.com/user-attachments/assets/59f42aff-8efe-4971-8dd7-7ff926e8ff52" />
-
-
-
 
 Question 2
 
