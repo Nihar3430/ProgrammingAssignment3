@@ -1,5 +1,19 @@
 # ProgrammingAssignment3
 
+File Structure:
+
+src\
+        main.py
+        graph.py
+    tests\
+        all test .in and .out files
+    results\
+        plot and timining data.
+
+
+
+
+
 Question 1
 
 <img width="639" height="475" alt="image" src="https://github.com/user-attachments/assets/59f42aff-8efe-4971-8dd7-7ff926e8ff52" />
