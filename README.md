@@ -1,1 +1,10 @@
 # ProgrammingAssignment3
+
+
+Question 2
+
+Let dp[i][j] be the maximum total value of a common subsequence between the suffix A[i...n-1] and the suffix B[j...m-1]. The base case is when i = n or j = m. In that case, one of the strings is empty, so there is no common subsequence left, and dp[i][j] = 0. If A[i] = B[j], then we have three choices. We can skip A[i], skip B[j], or match the two characters and add the value of that character. So in this case, dp[i][j] = max(dp[i+1][j], dp[i][j+1], v(A[i]) + dp[i+1][j+1]). If A[i] ≠ B[j], then we cannot match those two characters, so we only have two choices, which are skipping A[i] or skipping B[j]. So in this case, dp[i][j] = max(dp[i+1][j], dp[i][j+1]). This recurrence is correct because at each pair of positions, it checks every possible valid choice that could lead to an optimal answer. If the characters match, the best answer either uses that match or ignores it. If the characters do not match, one of them must be skipped. Since each state depends only on smaller suffix problems, dynamic programming can solve all subproblems and combine them to get the correct final answer.
+
+Question 3
+
+One way to compute the value of the highest value longest common subsequence is to use a 2D table dp of size (n+1) by (m+1), where n is the length of A and m is the length of B. First set all entries in the last row and last column to 0, since if one string is empty the result is 0. Then fill the table starting from the bottom right and moving toward the top left. For each position (i, j), check if A[i] is equal to B[j]. If they are equal, set dp[i][j] to the maximum of skipping A[i], skipping B[j], or matching them and adding the value of that character to dp[i+1][j+1]. If they are not equal, set dp[i][j] to the maximum of skipping A[i] or skipping B[j]. After filling the table, return dp[0][0] as the answer. The runtime of this algorithm is O(nm) because it fills an n by m table and each entry takes constant time to compute. The space complexity is also O(nm) since the full table is stored.
