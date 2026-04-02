@@ -13,3 +13,9 @@ def main():
         w = int(data[idx + 1])
         value[ch] = w
         idx += 2
+
+    A = data[idx]
+    B = data[idx + 1]
+
+    n = len(A)
+    m = len(B)
